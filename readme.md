@@ -30,13 +30,21 @@ Performance:
 Building and Running
 --------------------
 Requirements:
-- C++11 compatible compiler (g++ or clang++ recommended)
+- CMake 3.10+
+- C++11 compatible compiler (g++/clang++/MSVC)
 
-Compilation:
-> g++ bloom_filter.cpp -o bloom_filter -std=c++11
+CMake Build Instructions:
+1. Create build directory:
+   > mkdir build && cd build
 
-Execution:
-> ./bloom_filter
+2. Generate build system:
+   > cmake ..
+
+3. Compile:
+   > cmake --build .
+
+4. Run executable:
+   > ./MyExecutable
 
 Usage Guide
 -----------
